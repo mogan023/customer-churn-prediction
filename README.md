@@ -66,6 +66,24 @@ Customers are classified into three risk levels:
 | 30% – <70% | 🟡 Medium Risk |
 | ≥ 70% | 🔴 High Risk |
 
+## 📊 Model Evaluation
+
+Three classification approaches were evaluated:
+
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 80.55% | 65.72% | 55.88% | 60.40% | 84.21% |
+| Random Forest | 78.35% | 61.86% | 48.13% | 54.14% | 82.06% |
+| Balanced Logistic Regression | 73.81% | 50.43% | 78.34% | — | 84.16% |
+
+### Final Model
+
+The deployed application uses a **Balanced Logistic Regression** model integrated into a Scikit-learn Pipeline.
+
+Although standard Logistic Regression achieved higher overall accuracy, the balanced model was selected to improve detection of customers likely to churn.
+
+The balanced model achieved a **78.34% recall** for churn, making it better suited for identifying potential churners where missing a high-risk customer can be more costly than generating additional false positives.
+
 ### 🔹 Recommended Actions
 
 Based on the prediction, the application provides suggested customer-retention actions such as:
