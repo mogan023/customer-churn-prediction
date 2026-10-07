@@ -6,6 +6,18 @@ An end-to-end Machine Learning project that predicts whether a telecom customer 
 
 🔗 **GitHub Repository:** https://github.com/mogan023/customer-churn-prediction
 
+## 🖥️ Application Preview
+
+### Customer Churn Prediction Dashboard
+
+![Customer Churn Prediction App](screenshots/ui_app.png)
+
+### Prediction Results
+
+![Medium Risk Prediction](screenshots/Medium_risk.png)
+
+![Low Risk Prediction](screenshots/low_risk.png)
+
 ---
 
 ## 🚀 Project Overview
